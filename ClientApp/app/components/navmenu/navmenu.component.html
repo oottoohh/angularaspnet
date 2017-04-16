@@ -1,0 +1,54 @@
+<div class="sidebar" data-color="purple" data-image="~/dist/img/sidebar-1.jpg">
+			<!--
+		        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+
+		        Tip 2: you can also add an image using data-image tag
+		    -->
+
+			<div class="logo">
+				<a [routerLink]="['/home']" class="simple-text">
+					Creative Tim
+				</a>
+			</div>
+
+	    	<div class="sidebar-wrapper">
+	            <ul class="nav">
+	                <li [routerLinkActive]="['active']">
+	                    <a [routerLink]="['/home']">
+	                        <i class="material-icons">dashboard</i>
+	                        <p>Dashboard</p>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="user.html">
+	                        <i class="material-icons">person</i>
+	                        <p>User Profile</p>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="table.html">
+	                        <i class="material-icons">content_paste</i>
+	                        <p>Table List</p>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="typography.html">
+	                        <i class="material-icons">library_books</i>
+	                        <p>Typography</p>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="icons.html">
+	                        <i class="material-icons">bubble_chart</i>
+	                        <p>Icons</p>
+	                    </a>
+	                </li>
+                    <li [routerLinkActive]="['active']">
+	                    <a [routerLink]="['/fetch-data']">
+	                        <i class="fa fa-sun-o" aria-hidden="true"></i>
+	                        <p>Weather</p>
+	                    </a>
+	                </li>
+	            </ul>
+	    	</div>
+	    <div class="sidebar-background" style="background-image: url('/dist/img/sidebar-1.jpg') "></div></div>
